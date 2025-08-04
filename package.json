@@ -1,0 +1,48 @@
+{
+  "name": "remindr-bot",
+  "version": "1.1.0",
+  "description": "🔧 Bot in Node.js for Discord",
+  "exports": null,
+  "type": "module",
+  "scripts": {
+    "start": "npx tsx index.ts",
+    "format": "prettier . --write --cache --ignore-unknown",
+    "format:check": "prettier . --check --cache --ignore-unknown",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix"
+  },
+  "repository": {
+    "type": "git"
+  },
+  "keywords": [
+    "nodejs",
+    "discord",
+    "discord-badge",
+    "active-developer",
+    "active-developer-badge"
+  ],
+  "author": "Ericky Bogleaux",
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "5.4.1",
+    "discord.js": "14.21.0",
+    "node-fetch": "3.3.2",
+    "ora": "8.2.0",
+    "prompts": "2.4.2"
+  },
+  "devDependencies": {
+    "@types/node": "24.1.0",
+    "@types/prompts": "2.4.9",
+    "eslint": "9.31.0",
+    "eslint-config": "3.1.0",
+    "prettier": "^3.6.2",
+    "tsx": "^4.20.3"
+  },
+  "packageManager": "pnpm@10.13.1",
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "esbuild",
+      "unrs-resolver"
+    ]
+  }
+}
